@@ -31,14 +31,7 @@ This repository contains a simple Python script that calculates the factorial of
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/factorial-calculator.git
-   cd factorial-calculator
-
-## Usage
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/factorial-calculator.git
+   git clone https://github.com/kamruzzamanselim/factorial-calculator.git
    cd factorial-calculator
    ```
 
