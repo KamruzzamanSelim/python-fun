@@ -50,7 +50,7 @@ pip install pandas
 
 ## Usage
 
-### Example 1: Importing CSV from Kaggle
+### Example 1: Importing CSV from Google Drive in Kaggle
 ```python
 import pandas as pd
 # Read CSV file
