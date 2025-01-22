@@ -16,10 +16,6 @@ while True:
             product *= i
         print("Your Factorial is:", product)
 ```
-
-### README File (`README.md`)
-
-```markdown
 # Factorial Calculator
 
 This repository contains a simple Python script that calculates the factorial of a number entered by the user. The program demonstrates basic control flow and iteration in Python.
@@ -30,6 +26,13 @@ This repository contains a simple Python script that calculates the factorial of
 - Calculates the factorial of numbers greater than 1.
 - Handles edge cases for numbers less than or equal to 0.
 - Exits gracefully when the user enters a non-positive number.
+
+## Usage
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/factorial-calculator.git
+   cd factorial-calculator
 
 ## Usage
 
