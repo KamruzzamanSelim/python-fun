@@ -83,11 +83,3 @@ Contributions are welcome! Please fork this repository and submit a pull request
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
-
-### Steps to Add to GitHub
-1. Create a new GitHub repository.
-2. Add the `factorial_calculator.py` file and `README.md` to the repository.
-3. Commit the files with a meaningful message, such as `Initial commit with script and README`.
-4. Push the code to your GitHub repository. 
-
-Let me know if you need further assistance!
