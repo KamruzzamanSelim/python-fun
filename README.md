@@ -1,6 +1,6 @@
-# Project Title
+# IMPORT DATA FROM GOOGLE DRIVE TO KAGGLE OR GOOGLE COLAB
 
-A brief description of what your project does and who it's for.
+In most cases, when we are working with CSV file that is stored in Google Drive, we can easliy read the file either in Kaggle or Google Colab. You have to follow below steps to read CSV files.
 
 ---
 
@@ -37,7 +37,7 @@ This project demonstrates how to work with datasets in Python using Pandas, incl
 ### Setting Up
 Clone this repository:
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/KamruzzamanSelim/python-fun.git
 cd your-repo
 ```
 
