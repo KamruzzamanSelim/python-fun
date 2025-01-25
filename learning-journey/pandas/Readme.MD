@@ -8,7 +8,7 @@ Welcome to my Pandas learning repository! This space documents my progress and p
 - **Exploratory Data Analysis (EDA)**: Insights from real-world datasets using Pandas.
 - **Mini Projects**: Hands-on examples combining Pandas with libraries like Matplotlib and NumPy.
 
-![alt text](https://github.com/kamruzzamanselim/python-fun/blob/learning-journey/pandas/learning-journey/pandas/introduction-to-pandas-on-leetcode.png?raw=true)
+![alt text](https://github.com/kamruzzamanselim/python-fun/blob/learning-journey/pandas/introduction-to-pandas-on-leetcode.png?raw=true)
 
 ## Why Pandas?
 Pandas simplifies working with structured data and is a key tool for anyone in data science, machine learning, or analytics.
