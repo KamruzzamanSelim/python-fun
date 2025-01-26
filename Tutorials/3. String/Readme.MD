@@ -15,9 +15,8 @@ Here, we will be able to learn some string operations that can be used while wor
 Instructions on how to install and set up the project. For example:
 
 ```bash
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
-pip install -r requirements.txt
+git clone https://github.com/yourusername/python-fun.git
+cd python-fun/Tutorials/3. String
 ```
 
 ## Usage
@@ -81,6 +80,28 @@ Joining a list of strings into a single string.
 words = ['Hello', 'World']
 str = " ".join(words)
 print(str)  # Output: Hello World
+```
+
+### String Formatting
+Format strings using f-strings or `.format()`:
+
+```python
+name = "Alice"
+print(f"My name is {name}.")         # Using f-strings
+print("My name is {}.".format(name)) # Using .format()
+```
+### Case Conversion
+```python
+text = "Python is Fun!"
+print(text.upper())    # Output: PYTHON IS FUN!
+print(text.lower())    # Output: python is fun!
+```
+
+###Searching and Replacing
+```python
+text = "I love Python."
+print(text.find("Python"))          # Output: 7
+print(text.replace("Python", "JS")) # Output: I love JS.
 ```
 
 ## Contributing
