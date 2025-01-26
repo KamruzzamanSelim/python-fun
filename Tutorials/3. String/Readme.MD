@@ -91,13 +91,19 @@ print(f"My name is {name}.")         # Using f-strings
 print("My name is {}.".format(name)) # Using .format()
 ```
 ### Case Conversion
+
+Change the case of strings:
+
 ```python
 text = "Python is Fun!"
 print(text.upper())    # Output: PYTHON IS FUN!
 print(text.lower())    # Output: python is fun!
 ```
 
-###Searching and Replacing
+### Searching and Replacing
+
+Find and replace substrings:
+
 ```python
 text = "I love Python."
 print(text.find("Python"))          # Output: 7
