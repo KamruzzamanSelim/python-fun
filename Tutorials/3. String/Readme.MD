@@ -15,7 +15,7 @@ Here, we will be able to learn some string operations that can be used while wor
 Instructions on how to install and set up the project. For example:
 
 ```bash
-git clone https://github.com/yourusername/python-fun.git
+git clone https://github.com/kamruzzamanselim/python-fun.git
 cd python-fun/Tutorials/3. String
 ```
 
@@ -125,5 +125,3 @@ Guidelines for contributing to the project. For example:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 ```
-
-Feel free to modify this template to better fit your project's needs! If you have any specific requirements or additional sections you'd like to add, let me know!
