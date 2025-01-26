@@ -1,5 +1,4 @@
-```markdown
-# Few Examples of String Operation in Python
+## Few Examples of String Operation in Python
 
 Here, we will be able to learn some string operations that can be used while working with strings in python. I will add more one by one.
 
