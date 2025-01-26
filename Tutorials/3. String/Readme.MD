@@ -31,3 +31,13 @@ text = "Hello, Python!"
 print(text[0])    # Output: H
 print(text[-1])   # Output: !
 print(text[7:13]) # Output: Python
+
+### 2. String Formatting
+Format strings using f-strings or `.format()`:
+
+```python
+name = "Alice"
+print(f"My name is {name}.")         # Using f-strings
+print("My name is {}.".format(name)) # Using .format()
+
+
