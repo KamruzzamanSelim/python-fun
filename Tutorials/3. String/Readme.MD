@@ -1,9 +1,7 @@
-Here's a `README.md` template that includes a section on string operations with examples and code snippets using Python:
-
 ```markdown
-# Project Title
+# Few Examples of String Operation in Python
 
-A brief description of what this project does and who it's for.
+Here, we will be able to learn some string operations that can be used while working with strings in python. I will add more one by one.
 
 ## Table of Contents
 
