@@ -41,5 +41,5 @@ plt.show()
 
 
 ```markdown
-!Images/subplot_grid_vs_time.png
+![Time Series Plot Preview](Images/subplot_grid_vs_time.png)
 ```
