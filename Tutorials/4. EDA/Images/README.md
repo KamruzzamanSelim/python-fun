@@ -1,2 +1,1 @@
-```markdown
-Images on EDA
+# Images on EDA
