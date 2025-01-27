@@ -41,5 +41,5 @@ plt.show()
 
 
 ```markdown
-Tutorials/4. EDA/Images/subplot_grid_vs_time.png
+!Images/subplot_grid_vs_time.png
 ```
