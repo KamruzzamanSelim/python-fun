@@ -34,11 +34,10 @@ plt.xticks(rotation=90)  # Rotate x-axis labels for better visibility
 plt.legend()
 plt.grid()
 
-
 # Save the plot as an image file
 plt.savefig('plot.png')  # Save the plot to the project folder
 plt.show()
-
+```
 
 ```markdown
 ![Time Series Plot Preview](Images/subplot_grid_vs_time.png)
