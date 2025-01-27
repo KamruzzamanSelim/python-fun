@@ -17,3 +17,24 @@ To run the script, you need the following:
 Install the required libraries using:
 ```bash
 pip install matplotlib pandas
+
+# Import the required library
+import matplotlib.pyplot as plt
+
+# Slice the desired range (100th to 200th rows)
+subset = data.iloc[50:150]
+
+# Plot the time series
+plt.figure(figsize=(12, 6))
+plt.plot(subset.index, subset['grid'], label='Grid Value')
+plt.title('Time Series Plot (Timestamps on X-Axis)')
+plt.xlabel('Timestamp')
+plt.ylabel('Grid Value')
+plt.xticks(rotation=90)  # Rotate x-axis labels for better visibility
+plt.legend()
+plt.grid()
+
+# Save the plot as an image file
+plt.savefig('plot.png')  # Save the plot to the project folder
+plt.show()
+
