@@ -105,8 +105,8 @@ The largest value in the grid column is 4.063. This indicates that the data incl
 
 # D. Distribution of 'grid' Values
 ### We can see how the data is distributed. We can do this using Seaborn
-#### 1. Install Seaborn
-#### 2. Import Seaborn
+#### Step 1. Install Seaborn
+#### Step 2. Import Seaborn
 1. Install Seaborn
 ```bash
 pip install seaborn
@@ -135,3 +135,37 @@ plt.show()
 1. The distribution is centered around 0, with most values clustered between -1 and 1.
 2. There are fewer extreme values (e.g., near -4 or 4), indicating a relatively tight spread.
 3. The shape suggests a normal-like distribution with slight skewness or outliers.
+
+# E. Boxplot
+## A boxplot summarizes data distribution, identifies outliers, and compares groups using a five-number summary (min, Q1, median, Q3, max).
+
+```bash
+# Plot boxplot to check for outliers in 'grid' values
+plt.figure(figsize=(12, 6))
+sns.boxplot(x=data['grid'])
+plt.title('Boxplot of Grid Values')
+plt.xlabel('Grid Value')
+plt.show()
+```
+![Pandas Logo](Images/boxplot.png)
+### The above boxplot explains certain things-
+### Observations
+1. The median (central line in the box) is close to 0, suggesting the data is centered around this value.
+2. The IQR (height of the box) shows the spread of the middle 50% of the data.
+3. The whiskers extend to approximately -1 and 2, indicating the range of typical values.
+4. There are outliers beyond the whiskers, particularly on the positive side (e.g., near 3 and 4), suggesting extreme values in the dataset.
+
+# F. Plot Autocorrelation
+## This graph helps identify patterns or seasonality in time series data.
+```bash
+from statsmodels.graphics.tsaplots import plot_acf
+
+# Plot autocorrelation
+plot_acf(data['grid'].iloc[:1000], lags=100)
+plt.show()
+```
+![Pandas Logo](Images/acf.png)
+### Observations
+1. The autocorrelation starts high (around 0.75) at smaller lags and gradually decreases as the lag increases.
+2. At lag 10, the autocorrelation is around 0.10, indicating a weak relationship.
+3. The graph shows no significant negative correlation, as all values remain above -0.25.
