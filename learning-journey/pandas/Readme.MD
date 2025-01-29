@@ -21,4 +21,5 @@ Feel free to explore, star ⭐, and fork this repository. Let’s connect and gr
 
 #Python #Pandas #DataScience
 
+# Earned a Badge on Leetcode
 ![Pandas on Leetcode](introduction-to-pandas-on-leetcode.png)
