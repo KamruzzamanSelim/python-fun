@@ -40,4 +40,4 @@ plt.show()
 ```
 
 ```markdown
-![Time Series Plot Preview](python-fun/Tutorials/4. EDA/Images/subplot_grid_vs_time.png)
+![Time Series Plot Preview](Images/subplot_grid_vs_time.png)
