@@ -102,3 +102,36 @@ The largest value in the grid column is 4.063. This indicates that the data incl
 3. Skewness: The median (0.247) is higher than the mean (0.078), suggesting that the data might be slightly left-skewed (i.e., there are more extreme negative values pulling the mean down).
 4. Spread: The standard deviation (1.052) indicates that the data is moderately spread out. This is further supported by the range between the minimum (-3.626) and maximum (4.063).
 5. Quartiles: The interquartile range (IQR = 75th percentile - 25th percentile = 0.492 - (-0.234) = 0.726) shows that the middle 50% of the data is relatively tightly clustered.
+
+# D. Distribution of 'grid' Values
+### We can see how the data is distributed. We can do this using Seaborn
+#### 1. Install Seaborn
+#### 2. Import Seaborn
+1. Install Seaborn
+```bash
+pip install seaborn
+```
+2. Run the following code
+
+```bash
+import seaborn as sns
+
+# Plot the distribution of 'grid' values
+plt.figure(figsize=(12, 6))
+sns.histplot(data['grid'], kde=True)
+plt.title('Distribution of Grid Values')
+plt.xlabel('Grid Value')
+plt.ylabel('Frequency')
+plt.show()
+```
+![Pandas Logo](Images/distribution.png)
+
+## Distribution Explanation
+### Explanation
+1. X-Axis (Grid Value): Represents the range of grid values, from -4 to 4.
+2. Y-Axis (Frequency): Represents how often each grid value occurs, with frequencies ranging from 0 to 2500.
+
+### Key Observations:
+1. The distribution is centered around 0, with most values clustered between -1 and 1.
+2. There are fewer extreme values (e.g., near -4 or 4), indicating a relatively tight spread.
+3. The shape suggests a normal-like distribution with slight skewness or outliers.
