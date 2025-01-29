@@ -14,10 +14,12 @@ To run the script, you need the following:
   - `matplotlib`
   - `pandas` (to handle the dataset)
 
-Install the required libraries using:
+Step 1: Install the required libraries using:
 ```bash
 pip install matplotlib pandas
+```
 
+```bash
 # Import the required library
 import matplotlib.pyplot as plt
 
