@@ -44,7 +44,7 @@ plt.show()
 ![Pandas Logo](Images/subplot_grid_vs_time.png)
 
 # Description of the Plot
-## Title: The plot is titled "Time Series Plot (Grid VS Time)", indicating it shows the relationship between a variable (likely "Grid Value") and time.
+## Title: Time Series Plot (Grid VS Time)"
 
 Y-Axis (Vertical Axis): Represents the Grid Value, which seems to be a numerical metric.
 The values range from -1.00 to 0.75, suggesting fluctuations in the data.
