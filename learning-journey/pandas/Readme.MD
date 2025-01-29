@@ -20,3 +20,5 @@ I plan to expand this repository with advanced topics like:
 Feel free to explore, star ⭐, and fork this repository. Let’s connect and grow together!
 
 #Python #Pandas #DataScience
+
+![Pandas on Leetcode](introduction-to-pandas-on-leetcode.png)
