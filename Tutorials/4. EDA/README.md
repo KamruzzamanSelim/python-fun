@@ -1,4 +1,4 @@
-# Time Series Data Plotting
+# A. Time Series Data Plotting
 
 This project visualizes a subset of time series data using Python's `matplotlib` library. The plot displays grid values over a selected range of timestamps.
 
@@ -43,8 +43,8 @@ plt.show()
 
 ![Pandas Logo](Images/subplot_grid_vs_time.png)
 
-# Description of the Plot
-## Title: Time Series Plot (Grid VS Time)"
+## Description of the Plot
+### Title: Time Series Plot (Grid VS Time)"
 
 Y-Axis (Vertical Axis): Represents the Grid Value, which seems to be a numerical metric.
 The values range from -1.00 to 0.75, suggesting fluctuations in the data.
@@ -52,3 +52,11 @@ X-Axis (Horizontal Axis): Represents Time, with timestamps ranging from 01-01-18
 The timestamps are in the format MM-DD-YY HH:MM, indicating the data is recorded at 15-minute intervals.
 Data Points: The plot likely shows a line graph or scatter plot connecting the Grid Value over time.
 The values fluctuate between -1.00 and 0.75, suggesting variability in the data.
+
+# Display basic information about the dataset
+## We can get a report on the basic information of the Dataset that we are working with
+```bash
+print("\nBasic information about the dataset:")
+print(data.info())
+```
+![Pandas Logo](Images/info.png)
