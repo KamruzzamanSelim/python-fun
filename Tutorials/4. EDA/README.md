@@ -1,6 +1,5 @@
 # A. Time Series Data Plotting
-
-This project visualizes a subset of time series data using Python's `matplotlib` library. The plot displays grid values over a selected range of timestamps.
+We can get visualization a subset of time series data using Python's `matplotlib` library. The plot displays grid values over a selected range of timestamps.
 
 ## Features
 - Plots a time series with a specified range of rows.
