@@ -45,7 +45,6 @@ plt.show()
 
 ## Description of the Plot
 ### Title: Time Series Plot (Grid VS Time)"
-
 Y-Axis (Vertical Axis): Represents the Grid Value, which seems to be a numerical metric.
 The values range from -1.00 to 0.75, suggesting fluctuations in the data.
 X-Axis (Horizontal Axis): Represents Time, with timestamps ranging from 01-01-18 12:30 to 01-01-18 19:45.
@@ -53,10 +52,54 @@ The timestamps are in the format MM-DD-YY HH:MM, indicating the data is recorded
 Data Points: The plot likely shows a line graph or scatter plot connecting the Grid Value over time.
 The values fluctuate between -1.00 and 0.75, suggesting variability in the data.
 
-# Display basic information about the dataset
+# B. Display basic information about the dataset
 ## We can get a report on the basic information of the Dataset that we are working with
 ```bash
 print("\nBasic information about the dataset:")
 print(data.info())
 ```
 ![Pandas Logo](Images/info.png)
+
+## Dataset Overview
+DataFrame Class: The dataset is stored as a Pandas DataFrame (<class 'pandas.core.frame.DataFrame'>).
+Number of Entries: The dataset contains 35,040 rows (entries), indexed from 0 to 35,039.
+Number of Columns: There are 2 columns in the dataset.
+
+# C. Summary Statistics
+## We can obtain statistical summary from the Dataset
+```bash
+print("\nSummary statistics of the dataset:")
+print(data.describe())
+```
+![Pandas Logo](Images/stats.png)
+
+## Summary Statistics Explained
+Count: Value: 35,040.000000
+This indicates the total number of non-null entries in the grid column. Since it matches the total number of rows in the dataset (as seen in the info.png file), there are no missing values in this column.
+1. Mean:
+Value: 0.078473
+The average value of the grid column is approximately 0.078. This suggests that, on average, the grid values are slightly positive.
+2. Standard Deviation (std):
+Value: 1.052143
+The standard deviation measures the spread or variability of the data. A value of 1.052 indicates that the grid values are relatively spread out around the mean.
+3. Minimum (min):
+Value: -3.626000
+The smallest value in the grid column is -3.626. This indicates that the data includes some significantly negative values.
+25th Percentile (25%):
+4. Value: -0.234250
+Also known as the first quartile, this value indicates that 25% of the data points are less than or equal to -0.234.
+5. Median (50%):
+Value: 0.247000
+The median is the middle value of the dataset. Here, it is 0.247, meaning that 50% of the data points are less than or equal to this value.
+6. 75th Percentile (75%):
+Value: 0.492000
+Also known as the third quartile, this value indicates that 75% of the data points are less than or equal to 0.492.
+7. Maximum (max):
+Value: 4.063000
+The largest value in the grid column is 4.063. This indicates that the data includes some significantly positive values.
+### Key Insights
+1. Distribution of Data: The grid values range from -3.626 to 4.063, indicating a wide range of variability.
+2. The mean (0.078) is close to zero, but the presence of both negative and positive values suggests fluctuations around zero.
+3. Skewness: The median (0.247) is higher than the mean (0.078), suggesting that the data might be slightly left-skewed (i.e., there are more extreme negative values pulling the mean down).
+4. Spread: The standard deviation (1.052) indicates that the data is moderately spread out. This is further supported by the range between the minimum (-3.626) and maximum (4.063).
+5. Quartiles: The interquartile range (IQR = 75th percentile - 25th percentile = 0.492 - (-0.234) = 0.726) shows that the middle 50% of the data is relatively tightly clustered.
