@@ -39,5 +39,4 @@ plt.savefig('plot.png')  # Save the plot to the project folder
 plt.show()
 ```
 
-```markdown
-![Time Series Plot Preview](Images/subplot_grid_vs_time.png)
+![Pandas Logo](Images/subplot_grid_vs_time.png)
