@@ -177,35 +177,22 @@ plt.show()
 ```bash
 import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
 
-# Calculate week of the month
-data['Week_of_Month'] = data.index.to_series().apply(
-    lambda x: (x.day - 1) // 7 + 1
-)
+# Calculate week of the month and extract month/year
+data['Week_of_Month'] = (data.index.day - 1) // 7 + 1
 data['Month'] = data.index.month
-data['Year'] = data.index.year
 
-# Group by Month, Week_of_Month, and calculate the mean
+# Group by Month and Week_of_Month, then calculate the mean
 weekly_data = data.groupby(['Month', 'Week_of_Month']).mean().reset_index()
-
-# Map months to names for readability
-month_names = ['January', 'February', 'March', 'April', 'May', 'June',
-               'July', 'August', 'September', 'October', 'November', 'December']
 
 # Plot each month's data
 plt.figure(figsize=(16, 10))
-colors = plt.cm.tab20(np.linspace(0, 1, 12))  # Use 12 colors for the months
+month_names = ['January', 'February', 'March', 'April', 'May', 'June',
+               'July', 'August', 'September', 'October', 'November', 'December']
 
-for i in range(1, 13):  # Loop through each month
+for i, month in enumerate(month_names, 1):
     monthly_data = weekly_data[weekly_data['Month'] == i]
-    plt.plot(
-        monthly_data['Week_of_Month'],
-        monthly_data['grid'],
-        label=month_names[i-1],
-        color=colors[i-1],
-        alpha=0.8
-    )
+    plt.plot(monthly_data['Week_of_Month'], monthly_data['grid'], label=month, alpha=0.8)
 
 # Customize the plot
 plt.title("Seasonal Plot - Weekly Grid Data for Each Month", fontsize=18)
