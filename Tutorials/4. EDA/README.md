@@ -165,7 +165,66 @@ plot_acf(data['grid'].iloc[:1000], lags=100)
 plt.show()
 ```
 ![Pandas Logo](Images/acf.png)
+
 ### Observations
 1. The autocorrelation starts high (around 0.75) at smaller lags and gradually decreases as the lag increases.
 2. At lag 10, the autocorrelation is around 0.10, indicating a weak relationship.
 3. The graph shows no significant negative correlation, as all values remain above -0.25.
+
+# G. Weekly Data Plot for Compapring Each Month
+## This graph helps identify monthly patterns or seasonality in time series data.
+
+```bash
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+# Calculate week of the month
+data['Week_of_Month'] = data.index.to_series().apply(
+    lambda x: (x.day - 1) // 7 + 1
+)
+data['Month'] = data.index.month
+data['Year'] = data.index.year
+
+# Group by Month, Week_of_Month, and calculate the mean
+weekly_data = data.groupby(['Month', 'Week_of_Month']).mean().reset_index()
+
+# Map months to names for readability
+month_names = ['January', 'February', 'March', 'April', 'May', 'June',
+               'July', 'August', 'September', 'October', 'November', 'December']
+
+# Plot each month's data
+plt.figure(figsize=(16, 10))
+colors = plt.cm.tab20(np.linspace(0, 1, 12))  # Use 12 colors for the months
+
+for i in range(1, 13):  # Loop through each month
+    monthly_data = weekly_data[weekly_data['Month'] == i]
+    plt.plot(
+        monthly_data['Week_of_Month'],
+        monthly_data['grid'],
+        label=month_names[i-1],
+        color=colors[i-1],
+        alpha=0.8
+    )
+
+# Customize the plot
+plt.title("Seasonal Plot - Weekly Grid Data for Each Month", fontsize=18)
+plt.xlabel("Week of the Month", fontsize=14)
+plt.ylabel("Average Grid Value", fontsize=14)
+plt.xticks(range(1, 6), labels=["Week 1", "Week 2", "Week 3", "Week 4", "Week 5"], fontsize=12)
+plt.grid(alpha=0.3)
+plt.legend(title="Month", loc='upper right', fontsize=10)
+plt.tight_layout()
+
+plt.show()
+![Pandas Logo](Images/weekly_plot.png)
+### Purpose
+1. Reveal patterns: Show how grid values (e.g., energy, temperature) change across months and weeks.
+2. Compare months: Highlight differences in grid values between months.
+3. Detect anomalies: Identify unusual spikes or drops in specific weeks or months.
+
+### Observations
+1. Summer months (June, July, August) may show higher values due to air conditioning.
+2. Winter months (December, January) may show lower values due to milder weather.
+3. A spike in Week 5 could indicate end-of-month activity or billing cycles.
+4. An unexpected drop might point to a holiday or external event.
