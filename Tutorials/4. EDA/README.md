@@ -234,6 +234,7 @@ decomposition = seasonal_decompose(data['grid'], model='additive', period=96*7)
 decomposition.plot()
 plt.suptitle('Time Series Decomposition', y=1.02)  # Add a title
 plt.tight_layout()  # Adjust layout
+plt.xticks(rotation = 90)
 plt.show()
 ```
 ![Pandas Logo](Images/seasonal_decompose.png)
