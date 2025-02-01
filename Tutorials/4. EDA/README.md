@@ -218,7 +218,7 @@ plt.show()
 4. An unexpected drop might point to a holiday or external event.
 
 # H. Seasonal Decomposition
-## When to use Seasonal Decomposition
+### When to use Seasonal Decomposition
 1. Identify Trends: Understand long-term increases or decreases in the data.
 2. Analyze Seasonality: Detect repeating patterns (e.g., daily, weekly, or yearly cycles).
 3. Check Residuals: Look for anomalies or irregularities in the data.
