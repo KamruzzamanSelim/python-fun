@@ -217,6 +217,7 @@ plt.legend(title="Month", loc='upper right', fontsize=10)
 plt.tight_layout()
 
 plt.show()
+```
 ![Pandas Logo](Images/weekly_plot.png)
 ### Purpose
 1. Reveal patterns: Show how grid values (e.g., energy, temperature) change across months and weeks.
