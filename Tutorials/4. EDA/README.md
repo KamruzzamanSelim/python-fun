@@ -216,3 +216,35 @@ plt.show()
 2. Winter months (December, January) may show lower values due to milder weather.
 3. A spike in Week 5 could indicate end-of-month activity or billing cycles.
 4. An unexpected drop might point to a holiday or external event.
+
+# H. Seasonal Decomposition
+## When to use Seasonal Decomposition
+1. Identify Trends: Understand long-term increases or decreases in the data.
+2. Analyze Seasonality: Detect repeating patterns (e.g., daily, weekly, or yearly cycles).
+3. Check Residuals: Look for anomalies or irregularities in the data.
+
+```bash
+from statsmodels.tsa.seasonal import seasonal_decompose
+import matplotlib.pyplot as plt
+
+# Decompose the time series
+decomposition = seasonal_decompose(data['grid'], model='additive', period=96*7)
+
+# Plot the decomposition
+decomposition.plot()
+plt.suptitle('Time Series Decomposition', y=1.02)  # Add a title
+plt.tight_layout()  # Adjust layout
+plt.show()
+```
+![Pandas Logo](Images/seasonal_decompose.png)
+
+### The Time Series Decomposition (Subset) plot breaks down the time series data into three components:
+1. Observed (grid): The original data showing fluctuations over time.
+2. Trend: The long-term movement in the data, indicating overall increases or decreases.
+3. Seasonal: The repeating patterns or cycles within the data.
+4. Residual: The remaining noise or irregularities after removing the trend and seasonal components.
+
+### Key Observations:
+Trend: Shows a relatively stable pattern with minor fluctuations.
+Seasonal: Indicates clear repeating patterns, likely corresponding to daily or weekly cycles.
+Residual: Contains noise, but no significant anomalies are visible.
