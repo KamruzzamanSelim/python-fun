@@ -249,3 +249,24 @@ plt.show()
 Trend: Shows a relatively stable pattern with minor fluctuations.
 Seasonal: Indicates clear repeating patterns, likely corresponding to daily or weekly cycles.
 Residual: Contains noise, but no significant anomalies are visible.
+
+# Hourly Variation Using Boxplot
+
+```bash
+#Summary Statistics
+import seaborn as sns
+
+data['Hour'] = data.index.hour
+data['Day'] = data.index.dayofweek
+data['Month'] = data.index.month
+
+# Boxplot for hourly data
+plt.figure(figsize=(12, 6))
+sns.boxplot(x='Hour', y='grid', data=data)
+plt.title('Hourly Variation in Grid Data')
+plt.show()
+```
+### The boxplot illustrates the hourly variation in grid data across a 24-hour period. Here are the key observations:
+1. Night and Early Morning (0-6 hours): The grid values remain relatively stable with low variation and a small interquartile range (IQR), indicating minimal fluctuations.
+2. Morning to Afternoon (7-15 hours): A noticeable dip occurs, with median values dropping below zero and increased variation, suggesting higher fluctuations in grid usage or supply.
+3. Evening (16-23 hours): Grid values rise again, showing a steady increase in the median and IQR, with higher variations and more outliers in later hours.
