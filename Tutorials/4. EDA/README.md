@@ -266,6 +266,7 @@ sns.boxplot(x='Hour', y='grid', data=data)
 plt.title('Hourly Variation in Grid Data')
 plt.show()
 ```
+![Pandas Logo](Images/boxplot2.png)
 ### The boxplot illustrates the hourly variation in grid data across a 24-hour period. Here are the key observations:
 1. Night and Early Morning (0-6 hours): The grid values remain relatively stable with low variation and a small interquartile range (IQR), indicating minimal fluctuations.
 2. Morning to Afternoon (7-15 hours): A noticeable dip occurs, with median values dropping below zero and increased variation, suggesting higher fluctuations in grid usage or supply.
